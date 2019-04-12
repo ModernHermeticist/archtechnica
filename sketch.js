@@ -2,6 +2,19 @@ function setup()
 {
     createCanvas(window.innerWidth-20, window.innerHeight-20);
 }
+
+function resize_canvas()
+{
+    if (width != window.innerWidth)
+    {
+        width  = window.innerWidth-20;
+    }
+
+    if (height != window.innerHeight)
+    {
+        height = window.innerHeight-20;
+    }
+}
   
 function draw() 
 {
