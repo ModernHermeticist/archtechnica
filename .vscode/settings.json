@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ccc291f7-212e-4663-9cbd-209bb5b11994/resourceGroups/archtechnica/providers/Microsoft.Web/sites/archtechnica",
+    "appService.deploySubpath": ""
+}
