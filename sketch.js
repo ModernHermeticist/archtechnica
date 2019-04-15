@@ -85,11 +85,11 @@ function branch(len)
 function info()
 {
     fill(255, 255, 255);
-    textAlign(CENTER);
+    textAlign(LEFT);
     textSize(24*height/900);
     text(`You can see that the slider is\nmanipulating a fractal tree.
-          Unfortunately this is a very computationally intensive algorithm.
-          Not very good for javascript or browsers.`, width-width/4 + width / 192, height/2 + height / 27);
+Unfortunately this is a very\ncomputationally intensive algorithm.
+Not very good for javascript or browsers.`, width-(width/4 + width / 12), height/2 + height / 27);
 }
 
 function setAuto()
