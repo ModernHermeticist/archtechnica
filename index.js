@@ -4,12 +4,6 @@ var fs = require('fs');
 
 var port=process.env.PORT || 3000
 
-/*http.createServer(function (req, res) 
-{
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Welcome to ArchTechnica\nThis site is currently under construction\nIt will eventually host all of my personal projects.');
-}).listen(port);
-*/
 http.createServer(handleRequest).listen(port);
 
 console.log("Server running on port " + port);
