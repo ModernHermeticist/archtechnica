@@ -1,10 +1,10 @@
 var button;
-var angle = PI / 16;
+var angle = PI/4;
 
 function setup() 
 {
     createCanvas(window.innerWidth-20, window.innerHeight-20);
-    slider = createSlider(0, TWO_PI, PI/16, 0.01);
+    slider = createSlider(0, TWO_PI, PI/4, 0.01);
     slider.position(width / 2 - 80, height / 2 + 10);
     button = createButton('More information...');
     button.position(width / 2 - 65, height/2 + 30);
@@ -32,7 +32,12 @@ function draw()
         angle = slider.value();
         background(51);
         stroke(255);
+        fill(255, 255, 255);
+        textAlign(CENTER);
+        textSize(18);
+        text((angle / PI).toFixed(4) + " PI", width/2, height/2+60);
         textFunc();
+        text()
         translate(width/2, height);
         branch(100);
     }
