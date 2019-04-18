@@ -1,0 +1,16 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Recursive Tree";
+}
+<script language="javascript" type="text/javascript" src="~/js/p5/p5.js"></script>
+<!--<script language="javascript" type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.2.8/p5.min.js"></script>-->
+<script language="javascript" type="text/javascript" src="~/js/p5/addons/p5.dom.js"></script>
+<script language="javascript" type="text/javascript" src="~/js/RecursiveTree.js"></script>
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Here you can see a recursive tree.</p>
+
+<body onresize="resize_canvas()">
+</body>
